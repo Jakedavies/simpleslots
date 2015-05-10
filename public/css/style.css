@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: nexa;
+    src: url('/fonts/nexa/nexa_light.otf');
+}
+
+body{
+  background-color: #003941;
+  color: white;
+  font-family: nexa;
+}
+
+#gameCanvas{
+  background-color: rgba(158, 167, 184, 0.2)
+}
+.lander-action-container{
+  background-color: rgba(7, 8, 10, 0.2);
+
+}
+.lander-button{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  color: white;
+  width: 100%;
+  background-color: rgba(158, 167, 184, 0.3);
+  border: 1px solid rgba(158, 167, 184, 0.5);
+}
+.lander-button:hover{
+  color: white;
+  border: 1px solid rgba(158, 167, 184, 1);
+}
+.lander-action-container > div:nth-child(1){
+  padding-top: 80px;
+}
+.custom-footer{
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 35px;
+}
+.lander-text-field{
+  background-color: rgba(158, 167, 184, 0.3);
+  border: 1px solid rgba(158, 167, 184, 0.5);
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.lander-text-field:hover{
+  color: white;
+  border: 1px solid rgba(158, 167, 184, .7);
+}
