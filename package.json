@@ -12,11 +12,13 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "body-parser": "^1.12.3",
     "express": ">= 4.*",
-    "socket.io": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
     "handlebars": "*",
-    "express-handlebars":"*",
-    "redis":"*"
+    "redis": "*",
+    "socket.io": "*"
   },
   "author": "",
   "license": "MIT"

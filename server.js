@@ -2,7 +2,12 @@
 var express = require('express'),
   http = require('http')
   handlebars = require('handlebars'),
-  handlebarse = require('express-handlebars');
+  handlebarse = require('express-handlebars'),
+  session = require('express-session'),
+  bodyParser = require('body-parser');
+
+
+
 
 // Create an express instance and set a port variable
 var app = express();
@@ -13,8 +18,14 @@ var port = process.env.PORT || 3000;
 app.set('view engine', 'handlebars');
 app.engine('handlebars', handlebarse({defaultLayout: 'main'}));
 
+app.use(session({secret: 'sosecure'}));
 // Index Route
 
+//url encoding
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
 
 // Set /public as our static content dir
 app.use(express.static("public"));
