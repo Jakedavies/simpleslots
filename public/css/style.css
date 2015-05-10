@@ -9,14 +9,6 @@ body{
   color: white;
   font-family: nexa;
 }
-
-#game-board{
-
-}
-.play-area{
-  padding-bottom: 50px;
-  background-color: rgba(158, 167, 184, 0.2)
-}
 .lander-action-container{
   background-color: rgba(7, 8, 10, 0.2);
 
@@ -91,4 +83,9 @@ body{
 .slot-wrapper{
   padding-left: 15px;
   padding-right: 15px;
+}
+.celebrate{
+  background-image: url('http://media.giphy.com/media/lnnm0WDdWKuWI/giphy.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
